@@ -18,8 +18,8 @@ function App() {
           <Home />
           <About />
           <Skills />
-          <Projects />
-          <Awards />
+          {/* <Projects /> */}
+          {/* <Awards /> */}
           <Contact />
         </div>
       </BrowserRouter>
