@@ -14,11 +14,11 @@ function App() {
     <div className="app">
       <BrowserRouter>
         <Navbar />
-        <div className="content">
+        <div className="content animate-fade">
           <Home />
           <About />
           <Skills />
-          {/* <Projects /> */}
+          <Projects />
           {/* <Awards /> */}
           <Contact />
         </div>

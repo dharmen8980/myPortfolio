@@ -1,4 +1,4 @@
-import '../page.scss';
+import '../page.css';
 import React from "react";
 
 const Awards = () => {

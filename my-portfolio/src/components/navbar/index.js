@@ -1,4 +1,4 @@
-import "./index.scss";
+import "./index.css";
 import React from "react";
 import { HashLink } from "react-router-hash-link";
 import { SiGithub, SiLinkedin } from "react-icons/si";

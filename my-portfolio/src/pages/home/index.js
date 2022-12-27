@@ -1,6 +1,7 @@
-import "../page.scss";
+import "../page.css";
 import React from "react";
 import { MdFrontHand } from "react-icons/md";
+import { HashLink } from "react-router-hash-link";
 
 const Home = () => {
   return (
@@ -22,8 +23,15 @@ const Home = () => {
             of my work and information about my professional experience and
             skills. Thanks for visiting!
           </p>
-          <p >
-            <button className="hover:bg-white hover:text-black duration-1000 animate-bounce">Say hello!</button>
+          <p>
+            <HashLink to="/#contacts" smooth>
+            <button
+              className="hover:bg-white hover:text-black duration-1000 animate-bounce"
+              href="#contact"
+            >
+              Say hello!
+            </button>
+            </HashLink>
           </p>
         </div>
       </div>
