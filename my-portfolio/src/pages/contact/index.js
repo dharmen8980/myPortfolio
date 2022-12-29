@@ -12,7 +12,7 @@ const Contact = () => {
             id="contact-form"
             className="form_container"
             method="POST"
-            action="https://formsubmit.co/rs508735@gmail.com"
+            action="https://formsubmit.co/dharmendrasharma0@icloud.com"
             rel="noreferrer"
           >
             <label htmlFor="name">Name:</label>
