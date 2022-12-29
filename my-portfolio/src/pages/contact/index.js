@@ -1,7 +1,16 @@
 import "../page.css";
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 
 const Contact = () => {
+  const [isClicked, setIsClicked] = useState(false);
+  const button = document.querySelector("#resetButton");
+  useEffect(() => {
+    setTimeout(() => {
+    if (isClicked) {
+      button.click();
+    }}, 2000);
+  }, [isClicked, button]);
 
   return (
     <div className="page pb-[4rem]" id="contacts">
@@ -12,7 +21,7 @@ const Contact = () => {
             id="contact-form"
             className="form_container"
             method="POST"
-            action="https://formsubmit.co/dharmendrasharma0@icloud.com"
+            action="https://formspree.io/f/mnqyakwy"
             rel="noreferrer"
           >
             <label htmlFor="name">Name:</label>
@@ -43,6 +52,13 @@ const Contact = () => {
               type="submit"
               value="Submit"
               className="submit_button cursor-pointer"
+              onClick={() => setIsClicked(true)}
+            />
+            <input
+              id="resetButton"
+              type="reset"
+              value="Reset"
+              className="hidden"
             />
           </form>
         </div>
