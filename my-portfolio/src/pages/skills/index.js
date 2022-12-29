@@ -24,6 +24,7 @@ const Skills = () => {
           <h3 className="card-header">Backend</h3>
           <ul className="card-body">
             <li>Node.js</li>
+            <li>Spring Boot</li>
             <li>Express</li>
             <li>Django</li>
             <li>MySQL</li>

@@ -1,4 +1,4 @@
-import "../page.scss";
+import "../page.css";
 import React from "react";
 import { GoPrimitiveDot } from "react-icons/go";
 import { FaGraduationCap } from "react-icons/fa";

@@ -138,7 +138,7 @@ const Awards = () => {
               <li>
                 <b>Leadership: </b>Through my role as Vice President, I have had
                 the opportunity to lead and manage various ACM events and
-                initiatives,
+                initiatives.
               </li>
               <li>
                 <b>Organizational skills: </b>In my role as Vice President, I
@@ -161,6 +161,120 @@ const Awards = () => {
                 to build a career in the industry.
               </li>
             </ul>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-header bg-slate-300">
+            <img
+              src="guest_image.jpeg"
+              alt=""
+              className={index === 0 ? "mx-auto right h-[30rem]" : "hidden"}
+            />
+            <img
+              src="guest_image.jpeg"
+              alt=""
+              className={index === 1 ? "right mx-auto h-[30rem]" : "hidden"}
+            />
+            <img
+              src="guest_image.jpeg"
+              alt=""
+              className={index === 2 ? "right mx-auto h-[30rem]" : "hidden"}
+            />
+            <img
+              src="guest_image.jpeg"
+              alt=""
+              className={index === 3 ? "right mx-auto h-[30rem]" : "hidden"}
+            />
+          </div>
+          <div className="card-body">
+            <p>
+              <b>Guest Speaker: </b> Google Feveloper Student Club (GDSC) at The
+              University of Louisiana at Monroe
+            </p>
+            <p>
+              <b>Description: </b>Google Developer Student Clubs (GDCS) is a
+              program run by Google for students who are interested in Google
+              technologies. These clubs provide a platform for students to learn
+              and collaborate on projects using Google's developer technologies,
+              including Android, Cloud, and web development.
+            </p>
+            <p>
+              <b>Skills learned and developed:</b>
+            </p>
+            <ul className="list-disc pl-14 pt-4">
+              <li>
+                <b>Technical expertise: </b>My experience teaching students the
+                basics of Git and GitHub and introducing them to basic Git
+                commands allowed me to deepen my understanding and knowledge of
+                these technologies. This is an important skill for any
+                developer, as it allows us to stay up to date with the latest
+                technologies and tools in the field.
+              </li>
+              <li>
+                <b>Mentorship: </b>My role as a guest speaker at the GDCS gave
+                me the opportunity to mentor and guide students as they learn
+                about Google technologies. This experience has improved my
+                ability to provide guidance and support to others, an important
+                skill for any developer.
+              </li>
+              <li>
+                <b>Communication: </b>Through my experience as a guest speaker
+                for the Google Developer Student Club at ULM, I have developed
+                my ability to clearly convey technical concepts and teach
+                others.
+              </li>
+              <li>
+                <b>Leadership: </b>Being invited to speak at the Google
+                Developer Student Club demonstrates my leadership and expertise
+                in the field, as well as my ability to share my knowledge with
+                others
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="card">
+          <div className="card-header bg-slate-300">
+            <img
+              src="honor_image.jpeg"
+              alt=""
+              className={index === 0 ? "mx-auto right h-[30rem]" : "hidden"}
+            />
+            <img
+              src="honor_image.jpeg"
+              alt=""
+              className={index === 1 ? "right mx-auto h-[30rem]" : "hidden"}
+            />
+            <img
+              src="honor_image.jpeg"
+              alt=""
+              className={index === 2 ? "right mx-auto h-[30rem]" : "hidden"}
+            />
+            <img
+              src="honor_image.jpeg"
+              alt=""
+              className={index === 3 ? "right mx-auto h-[30rem]" : "hidden"}
+            />
+          </div>
+          <div className="card-body">
+            <p>
+              <b>Honored member: </b> Upsilon Pi Epsilon (UPE), an international
+              honor society
+            </p>
+            <p>
+              <b>Description: </b>As an honored member of Upsilon Pi Epsilon, I
+              have been recognized for my outstanding achievements in the field
+              of computer science. This international honor society is dedicated
+              to the promotion of the computing and information disciplines and
+              acknowledges the academic excellence of its members. Being a
+              member of Upsilon Pi Epsilon demonstrates my commitment to the
+              highest standards of academic and professional excellence in the
+              field of computer science. It also showcases my passion for
+              staying current in the rapidly changing field of technology and my
+              dedication to my studies and professional development. This
+              distinction is a testament to myhard work and dedication to my
+              craft, and thus I believe it is a valuable addition to mycareer
+              portfolio.
+            </p>
           </div>
         </div>
       </div>
