@@ -1,8 +1,8 @@
 import "../page.scss";
 import React from "react";
 import { GoPrimitiveDot } from "react-icons/go";
-import {FaGraduationCap} from "react-icons/fa";
-import {FaBriefcase} from "react-icons/fa";
+import { FaGraduationCap } from "react-icons/fa";
+import { FaBriefcase } from "react-icons/fa";
 
 const About = () => {
   const [iseducation, setEducation] = React.useState(true);
@@ -48,7 +48,7 @@ const About = () => {
             onClick={() => setEducation(true)}
           >
             Education
-            <FaGraduationCap className="ml-2 text-xl"/>
+            <FaGraduationCap className="ml-2 text-xl" />
           </button>
         </p>
         <p>
@@ -61,12 +61,12 @@ const About = () => {
             onClick={() => setEducation(false)}
           >
             Experience
-            <FaBriefcase className="mt-1 ml-2"/>
+            <FaBriefcase className="mt-1 ml-2" />
           </button>
         </p>
       </div>
       <div className={iseducation ? "timeline animate-fade" : "hidden"}>
-        <div className="">
+        <div>
           <ul>
             <li>
               <div className="timeline-item-right">
@@ -115,10 +115,10 @@ const About = () => {
             <div className="timeline-item-left">
               <h3 className="timeline-item-left-title">2022</h3>
               <p className="timeline-item-description">
-               <span>Full-Stack Developer</span>{" "}
-                 at IBM Tech Grant
-                <br/>
-                Monroe, LA<br/>
+                <span>Full-Stack Developer</span> at IBM Tech Grant
+                <br />
+                Monroe, LA
+                <br />
                 <span>Jan 2022 - Present</span>
               </p>
             </div>
@@ -128,11 +128,12 @@ const About = () => {
             <div className="timeline-item-right">
               <h3 className="timeline-item-right-title">2022</h3>
               <p className="timeline-item-description">
-                <span>Software Developer </span> and <span>Project Manager</span>{" "}
-                <br/> at Virtual Hut <br/>
+                <span>Software Developer </span> and{" "}
+                <span>Project Manager</span> <br /> at Virtual Hut <br />
                 The University of Louisiana at Monroe
-                <br/>
-                Monroe, LA<br/>
+                <br />
+                Monroe, LA
+                <br />
                 <span>Aug 2022 - Present</span>
               </p>
             </div>

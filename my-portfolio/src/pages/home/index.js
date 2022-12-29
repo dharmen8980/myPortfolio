@@ -10,7 +10,7 @@ const Home = () => {
         <img
           src="https://media.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1677110400&v=beta&t=Q2BkWWgfYftZeNLRhwhFJbhgHOiUtmRXLtgc3QpdSCI"
           alt="Dharmendra Sharma"
-          className="homepage-profile"
+          className="profile_image"
         />
         <div className="homepage-content">
           <h1 className="homepage-content-title">

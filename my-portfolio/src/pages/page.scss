@@ -12,7 +12,7 @@
 
 @keyframes left {
   0% {
-    transform: translateX(-200%);
+    transform: translateX(-100%);
   }
   100% {
     transform: translateX(0);
@@ -20,21 +20,39 @@
 }
   @keyframes right {
     0% {
-      transform: translateX(200%);
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(0);
+      opacity: 1;
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(-100%);
+      opacity: 0;
     }
   }
   
   .left {
-    animation: left 1s ease-in-out;
+    animation: left 9s ease-in-out;
   }
 
   .right {
-    animation: right 1s ease-in-out;
+    animation: right 9s ease-in-out;
   }
+ @keyframes fadeout {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+ }
 
+ .fadeout {
+  animation: fadeout 1s ease-in-out;
+  animation-delay: 2s;
+ }
 @keyframes tilt {
   0% {
     transform: rotate(10deg);
@@ -71,7 +89,7 @@ span {
   max-width: 700px;
   color: rgb(69, 66, 66);
 }
-img {
+.profile_image {
   width: 200px;
   height: 200px;
   object-fit: cover;
@@ -147,6 +165,7 @@ button {
   margin-top: 20px;
   border-radius: 4px;
   font-family: "Roboto", sans-serif;
+  max-width: 700px;;
 
   .card-header {
     background-color: rgb(218, 215, 215);
@@ -156,6 +175,7 @@ button {
     padding: 12px 20px 12px 20px;
     text-align: center;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    max-width:800px;;
   }
 
   .card-body {
@@ -321,17 +341,17 @@ button {
 .experience {
   animation: fadeIn 1s ease-in-out;
 }
-// .timeline-show:before {
-//   content: "";
-//   position: relative;
-//   top: 0rem;
-//   bottom: 0;
-//   left: 0rem;
-//   width: 2px;
-//   height: 20rem ;
-//   background-color: rgb(115, 115, 115);
-//   z-index: 20;;
-// }
+.timeline:before {
+  content: "";
+  position: relative;
+  top: 0rem;
+  bottom: 0;
+  left: 0rem;
+  width: 2px;
+  height: 20rem ;
+  background-color: rgb(115, 115, 115);
+  z-index: 20;
+}
 
 .bar {
   position: relative;
@@ -342,6 +362,7 @@ button {
   width: 1px;
   padding: 0;
   border:1px solid #000;
+  z-index: 20;
 }
 
 .timeline-item {
@@ -404,4 +425,11 @@ button {
   background-color: #fff;
   padding: 2rem 0 0 0;
   margin: 0 0 0 0;
+}
+
+/* Awards layout */
+.pelican {
+  clip-path: none;
+  border: none;
+  border-radius: none !important;
 }

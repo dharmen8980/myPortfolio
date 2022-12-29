@@ -19,7 +19,7 @@ function App() {
           <About />
           <Skills />
           <Projects />
-          {/* <Awards /> */}
+          <Awards />
           <Contact />
         </div>
       </BrowserRouter>
