@@ -17,7 +17,7 @@ const Awards = () => {
     }
   }, [index]);
   return (
-    <div className="page" id="awards">
+    <div className="page overflow-x-hidden" id="awards">
       <h1>Leadership and Awards</h1>
       <div className="mx-8">
         <div className="card">
@@ -101,22 +101,22 @@ const Awards = () => {
             <img
               src="acm_image1.jpeg"
               alt=""
-              className={index === 0 ? "mx-auto right h-[30rem]" : "hidden"}
+              className={index === 0 ? "mx-auto right h-[20rem]" : "hidden"}
             />
             <img
               src="acm_image2.jpeg"
               alt=""
-              className={index === 1 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 1 ? "right mx-auto h-[20rem]" : "hidden"}
             />
             <img
               src="acm_image3.jpeg"
               alt=""
-              className={index === 2 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 2 ? "right mx-auto h-[20rem]" : "hidden"}
             />
             <img
               src="acm_image4.jpeg"
               alt=""
-              className={index === 3 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 3 ? "right mx-auto h-[20rem]" : "hidden"}
             />
           </div>
           <div className="card-body">
@@ -168,22 +168,22 @@ const Awards = () => {
             <img
               src="guest_image.jpeg"
               alt=""
-              className={index === 0 ? "mx-auto right h-[30rem]" : "hidden"}
+              className={index === 0 ? "mx-auto right h-[20rem]" : "hidden"}
             />
             <img
               src="guest_image.jpeg"
               alt=""
-              className={index === 1 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 1 ? "right mx-auto h-[20rem]" : "hidden"}
             />
             <img
               src="guest_image.jpeg"
               alt=""
-              className={index === 2 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 2 ? "right mx-auto h-[20rem]" : "hidden"}
             />
             <img
               src="guest_image.jpeg"
               alt=""
-              className={index === 3 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 3 ? "right mx-auto h-[20rem]" : "hidden"}
             />
           </div>
           <div className="card-body">
@@ -237,22 +237,22 @@ const Awards = () => {
             <img
               src="honor_image.jpeg"
               alt=""
-              className={index === 0 ? "mx-auto right h-[30rem]" : "hidden"}
+              className={index === 0 ? "mx-auto right h-[20rem]" : "hidden"}
             />
             <img
               src="honor_image.jpeg"
               alt=""
-              className={index === 1 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 1 ? "right mx-auto h-[20rem]" : "hidden"}
             />
             <img
               src="honor_image.jpeg"
               alt=""
-              className={index === 2 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 2 ? "right mx-auto h-[20rem]" : "hidden"}
             />
             <img
               src="honor_image.jpeg"
               alt=""
-              className={index === 3 ? "right mx-auto h-[30rem]" : "hidden"}
+              className={index === 3 ? "right mx-auto h-[20rem]" : "hidden"}
             />
           </div>
           <div className="card-body">

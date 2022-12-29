@@ -25,12 +25,12 @@ const Home = () => {
           </p>
           <p>
             <HashLink to="/#contacts" smooth>
-            <button
-              className="hover:bg-white hover:text-black duration-1000 animate-bounce"
-              href="#contact"
-            >
-              Say hello!
-            </button>
+              <button
+                className="hover:bg-white hover:text-black duration-1000 animate-bounce"
+                href="#contact"
+              >
+                Say hello!
+              </button>
             </HashLink>
           </p>
         </div>
