@@ -188,7 +188,7 @@ const Awards = () => {
           </div>
           <div className="card-body">
             <p>
-              <b>Guest Speaker: </b> Google Feveloper Student Club (GDSC) at The
+              <b>Guest Speaker: </b> Google Developer Student Club (GDSC) at The
               University of Louisiana at Monroe
             </p>
             <p>
