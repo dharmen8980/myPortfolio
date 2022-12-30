@@ -1,47 +1,84 @@
 import "../page.css";
 import React from "react";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 const Awards = () => {
-  const [index, setIndex] = useState(0);
+  const [pelicanIndex, setPelicanIndex] = useState(0);
+  const [acmindex, setAcmIndex] = useState(0);
+  const [animation, setAnimation] = useState("");
+  const prevpelicanIndex = useRef(pelicanIndex);
+  const prevacmIndex = useRef(acmindex);
 
   useEffect(() => {
-    setTimeout(() => {
-      setIndex(index + 1);
-    }, 9000);
-    if (index < 0) {
-      setIndex(3);
+    if (pelicanIndex < 0) {
+      setPelicanIndex(0);
     }
-    if (index > 3) {
-      setIndex(0);
+    if (pelicanIndex > 3) {
+      setPelicanIndex(3);
     }
-  }, [index]);
+    if (pelicanIndex > prevpelicanIndex.current) {
+      setAnimation("right h-[30rem]");
+    } else {
+      setAnimation("left h-[30rem]");
+    }
+    prevpelicanIndex.current = pelicanIndex;
+  }, [pelicanIndex]);
+
+  useEffect(() => {
+    if (acmindex < 0) {
+      setAcmIndex(0);
+    }
+    if (acmindex > 3) {
+      setAcmIndex(3);
+    }
+    if (acmindex > prevacmIndex.current) {
+      setAnimation("right h-[30rem]");
+    } else {
+      setAnimation("left h-[30rem]");
+    }
+    prevacmIndex.current = acmindex;
+  }, [acmindex]);
   return (
     <div className="page overflow-x-hidden" id="awards">
       <h1>Leadership and Awards</h1>
       <div className="mx-8">
         <div className="card">
-          <div className="card-header bg-slate-300">
-            <img
-              src="pelican_image1.jpeg"
-              alt=""
-              className={index === 0 ? "mx-auto right" : "hidden"}
-            />
-            <img
-              src="pelican_image2.jpeg"
-              alt=""
-              className={index === 1 ? "right mx-auto" : "hidden"}
-            />
-            <img
-              src="pelican_image3.jpeg"
-              alt=""
-              className={index === 2 ? "right mx-auto" : "hidden"}
-            />
-            <img
-              src="pelican_image4.jpeg"
-              alt=""
-              className={index === 3 ? "right mx-auto" : "hidden"}
-            />
+          <div className="card-header bg-slate-300 flex items-center justify-between">
+            <div>
+              <BsChevronLeft
+                onClick={() => setPelicanIndex(pelicanIndex - 1)}
+                className="bg-white text-3xl h-[6rem]"
+              />
+            </div>
+            <div>
+              <img
+                src="pelican_image4.jpeg"
+                alt=""
+                className={pelicanIndex === 0 ? animation : "hidden"}
+              />
+              <img
+                src="pelican_image1.jpeg"
+                alt=""
+                className={pelicanIndex === 1 ? animation : "hidden"}
+              />
+              <img
+                src="pelican_image2.jpeg"
+                alt=""
+                className={pelicanIndex === 2 ? animation : "hidden"}
+              />
+              <img
+                src="pelican_image3.jpeg"
+                alt=""
+                className={pelicanIndex === 3 ? animation : "hidden"}
+              />
+            </div>
+            <div>
+              <BsChevronRight
+                onClick={() => setPelicanIndex(pelicanIndex + 1)}
+                className=" bg-white text-3xl h-[6rem]"
+              />
+            </div>
           </div>
           <div className="card-body">
             <p>
@@ -97,27 +134,41 @@ const Awards = () => {
           </div>
         </div>
         <div className="card">
-          <div className="card-header bg-slate-300">
-            <img
-              src="acm_image1.jpeg"
-              alt=""
-              className={index === 0 ? "mx-auto right h-[20rem]" : "hidden"}
-            />
-            <img
-              src="acm_image2.jpeg"
-              alt=""
-              className={index === 1 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
-            <img
-              src="acm_image3.jpeg"
-              alt=""
-              className={index === 2 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
-            <img
-              src="acm_image4.jpeg"
-              alt=""
-              className={index === 3 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
+          <div className="card-header bg-slate-300  flex items-center justify-between">
+            <div>
+              <BsChevronLeft
+                onClick={() => setAcmIndex(acmindex - 1)}
+                className="bg-white text-3xl h-[6rem]"
+              />
+            </div>
+            <div>
+              <img
+                src="acm_image1.jpeg"
+                alt=""
+                className={acmindex === 0 ? animation : "hidden"}
+              />
+              <img
+                src="acm_image2.jpeg"
+                alt=""
+                className={acmindex === 1 ? animation : "hidden"}
+              />
+              <img
+                src="acm_image3.jpeg"
+                alt=""
+                className={acmindex === 2 ? animation : "hidden"}
+              />
+              <img
+                src="acm_image4.jpeg"
+                alt=""
+                className={acmindex === 3 ? animation : "hidden"}
+              />
+            </div>
+            <div>
+              <BsChevronRight
+                onClick={() => setAcmIndex(acmindex + 1)}
+                className=" bg-white text-3xl h-[6rem]"
+              />
+            </div>
           </div>
           <div className="card-body">
             <p>
@@ -168,22 +219,7 @@ const Awards = () => {
             <img
               src="guest_image.jpeg"
               alt=""
-              className={index === 0 ? "mx-auto right h-[20rem]" : "hidden"}
-            />
-            <img
-              src="guest_image.jpeg"
-              alt=""
-              className={index === 1 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
-            <img
-              src="guest_image.jpeg"
-              alt=""
-              className={index === 2 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
-            <img
-              src="guest_image.jpeg"
-              alt=""
-              className={index === 3 ? "right mx-auto h-[20rem]" : "hidden"}
+              className="mx-auto right h-[20rem]"
             />
           </div>
           <div className="card-body">
@@ -237,22 +273,7 @@ const Awards = () => {
             <img
               src="honor_image.jpeg"
               alt=""
-              className={index === 0 ? "mx-auto right h-[20rem]" : "hidden"}
-            />
-            <img
-              src="honor_image.jpeg"
-              alt=""
-              className={index === 1 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
-            <img
-              src="honor_image.jpeg"
-              alt=""
-              className={index === 2 ? "right mx-auto h-[20rem]" : "hidden"}
-            />
-            <img
-              src="honor_image.jpeg"
-              alt=""
-              className={index === 3 ? "right mx-auto h-[20rem]" : "hidden"}
+              className="mx-auto right h-[20rem]"
             />
           </div>
           <div className="card-body">
