@@ -96,6 +96,10 @@ span {
   border-radius: 60% 50% 40% 30%;
 }
 
+img {
+  max-height: 30rem;
+}
+
 h1 {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;

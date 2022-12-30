@@ -18,9 +18,9 @@ const Awards = () => {
       setPelicanIndex(3);
     }
     if (pelicanIndex > prevpelicanIndex.current) {
-      setAnimation("right h-[30rem]");
+      setAnimation("right");
     } else {
-      setAnimation("left h-[30rem]");
+      setAnimation("left");
     }
     prevpelicanIndex.current = pelicanIndex;
   }, [pelicanIndex]);
@@ -33,9 +33,9 @@ const Awards = () => {
       setAcmIndex(3);
     }
     if (acmindex > prevacmIndex.current) {
-      setAnimation("right h-[30rem]");
+      setAnimation("right");
     } else {
-      setAnimation("left h-[30rem]");
+      setAnimation("left");
     }
     prevacmIndex.current = acmindex;
   }, [acmindex]);
