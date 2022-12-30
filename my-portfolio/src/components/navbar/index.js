@@ -117,7 +117,7 @@ const Navbar = () => {
             <div className="flex row-auto">
               <div className="flex row-auto gap-4 mr-2 text-xl ">
                 <a
-                  href="https://github.com/dharmen8980"
+                  href="https://www.linkedin.com/in/dharmendra-sharma-b67549225"
                   target="_blank"
                   rel="noreferrer"
                   className="navbar-links-item-linkedin"
@@ -125,7 +125,7 @@ const Navbar = () => {
                   <SiLinkedin />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/dharmendra-sharma-b67549225"
+                  href="https://github.com/dharmen8980"
                   target="_blank"
                   rel="noreferrer"
                   className="navbar-links-item-github"
@@ -222,7 +222,7 @@ const Navbar = () => {
             <div className="flex flex-row">
               <div className="flex row-auto gap-4 mr-2 text-xl">
                 <a
-                  href="https://github.com/dharmen8980"
+                  href="https://www.linkedin.com/in/dharmendra-sharma-b67549225"
                   target="_blank"
                   rel="noreferrer"
                   className="navbar-links-item-linkedin"
@@ -230,7 +230,7 @@ const Navbar = () => {
                   <SiLinkedin />
                 </a>
                 <a
-                  href="https://www.linkedin.com/in/dharmendra-sharma-b67549225"
+                  href="https://github.com/dharmen8980"
                   target="_blank"
                   rel="noreferrer"
                   className="navbar-links-item-github"
