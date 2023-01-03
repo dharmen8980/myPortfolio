@@ -12,7 +12,7 @@ import {Helmet} from "react-helmet";
 
 function App() {
   return (
-    <div className="app">
+    <div>
       <Helmet>
         <title>Dharmendra Sharma</title>
         <link rel="icon" href="logo1.png" />

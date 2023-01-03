@@ -6,7 +6,7 @@
 }
 
 .navbar {
-  @media screen and (max-width: 658px) {
+  @media screen and (max-width: 675px) {
     display: none;
   }
   padding: 0 2rem;
@@ -68,7 +68,7 @@
 
 .mobile {
 
-  @media screen and (min-width: 658px) {
+  @media screen and (min-width: 675px) {
     display: none;
   }
   padding: 0 2rem;
@@ -83,8 +83,8 @@
   box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.19);
   
   &-logo {
-    position: relative;
-    left: 1rem;
+    // position: relative;
+    // left: 1rem;
 
     &-name{
       display: flex;

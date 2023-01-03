@@ -14,9 +14,9 @@ const Home = () => {
         />
         <div className="homepage-content">
           <h1 className="homepage-content-title">
-            Dharmendra Sharma <MdFrontHand className="tilt" />
+            Dharmendra Sharma<MdFrontHand className="tilt" />
           </h1>
-          <p>
+          <p >
             Hi, I'm a full-stack developer with over 2 years of experience. I
             have strong project management skills and a passion for delivering
             high-quality software solutions. On this site, you'll find examples

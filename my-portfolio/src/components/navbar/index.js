@@ -115,7 +115,7 @@ const Navbar = () => {
         {expanded ? (
           <>
             <div className="flex row-auto">
-              <div className="flex row-auto gap-4 mr-2 text-xl ">
+              <div className="flex row-auto gap-4 mr-4 text-xl ">
                 <a
                   href="https://www.linkedin.com/in/dharmendra-sharma-b67549225"
                   target="_blank"
