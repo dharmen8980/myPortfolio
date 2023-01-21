@@ -1,16 +1,45 @@
 import "../page.css";
-import React, { useEffect } from "react";
-import { useState } from "react";
+import React from "react";
+import { useRef} from "react";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const [isClicked, setIsClicked] = useState(false);
-  const button = document.querySelector("#resetButton");
-  useEffect(() => {
-    setTimeout(() => {
-    if (isClicked) {
-      button.click();
-    }}, 2000);
-  }, [isClicked, button]);
+  const form = useRef();
+  const SERVICEID = "service_e6akx7j";
+  const TEMPLATEID = "template_v5olxyi";
+  const PUBLICKEY = "vANPSK0Y7sYwZtHeK";
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm(SERVICEID, TEMPLATEID, form.current, PUBLICKEY).then(
+      (result) => {
+        toast.success("Message sent, I'll get back to you soon", {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        e.target.reset();
+      },
+      (error) => {
+        toast.error("Something went wrong, please try again", {
+          position: "bottom-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+      }
+    );
+  }
 
   return (
     <div className="page pb-[4rem]" id="contacts">
@@ -18,16 +47,13 @@ const Contact = () => {
       <div className=" formbox">
         <div className=" pl-9 pr-16 py-8 m-2 bg-white">
           <form
-            id="contact-form"
             className="form_container"
-            method="POST"
-            action="https://formspree.io/f/mnqyakwy"
-            rel="noreferrer"
+            ref={form}
+            onSubmit={sendEmail}
           >
             <label htmlFor="name">Name:</label>
             <input
               type="text"
-              id="name"
               name="name"
               required
               className="card-input"
@@ -36,7 +62,6 @@ const Contact = () => {
             <label htmlFor="email">Email: </label>
             <input
               type="email"
-              id="email"
               name="email"
               required
               className="card-input"
@@ -45,22 +70,15 @@ const Contact = () => {
             <label htmlFor="message" className="message">
               Message:
             </label>
-            <textarea id="message" name="message" required></textarea>
+            <textarea name="message" required></textarea>
             <br />
-            <input type="hidden" name="_captcha" value="false" />
             <input
               type="submit"
               value="Submit"
               className="submit_button cursor-pointer"
-              onClick={() => setIsClicked(true)}
-            />
-            <input
-              id="resetButton"
-              type="reset"
-              value="Reset"
-              className="hidden"
             />
           </form>
+          <ToastContainer />
         </div>
       </div>
     </div>
