@@ -154,12 +154,6 @@ const About = () => {
             </TimelineItem>
           </Timeline>
         </div>
-        <a
-          href="https://drive.google.com/file/d/1fHk1XnOn177t-T_U5AST-1iYpj7ew1EX/view?usp=share_link"
-          download
-        >
-          <button className="w-fit mx-auto">Download CV</button>
-        </a>
       </div>
     </div>
   );
