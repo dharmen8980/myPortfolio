@@ -9,7 +9,7 @@ const Home = () => {
     <div className="page" id="home">
       <div className="homepage">
         <img
-          src="https://media.licdn.com/dms/image/C4E03AQEivUUtl2npjQ/profile-displayphoto-shrink_800_800/0/1650573217613?e=1677110400&v=beta&t=Q2BkWWgfYftZeNLRhwhFJbhgHOiUtmRXLtgc3QpdSCI"
+          src="/profile.jpeg"
           alt="Dharmendra Sharma"
           className="profile_image"
         />
